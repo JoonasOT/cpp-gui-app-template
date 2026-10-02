@@ -1,0 +1,4 @@
+includedirs
+{
+   "spdlog/include"
+}

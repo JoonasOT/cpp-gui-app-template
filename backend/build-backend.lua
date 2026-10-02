@@ -12,6 +12,8 @@ project "backend"
       "src"
    }
 
+   include "../external_dependencies/spdlog"
+
    targetdir ("../binaries/" .. OutputDir .. "/%{prj.name}")
    objdir ("../binaries/intermediates/" .. OutputDir .. "/%{prj.name}")
 
