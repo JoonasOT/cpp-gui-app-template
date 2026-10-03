@@ -2,5 +2,5 @@
 
 int main()
 {
-    backend::PrintHelloWorld();
+    backend::test();
 }

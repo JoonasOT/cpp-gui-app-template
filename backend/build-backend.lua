@@ -13,6 +13,7 @@ project "backend"
    }
 
    include "../external_dependencies/spdlog"
+   include "../external_dependencies/cpp-httplib"
 
    targetdir ("../binaries/" .. OutputDir .. "/%{prj.name}")
    objdir ("../binaries/intermediates/" .. OutputDir .. "/%{prj.name}")
