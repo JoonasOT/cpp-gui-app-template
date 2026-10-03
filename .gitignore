@@ -1,6 +1,9 @@
 **.vcxproj
 **.vcxproj.user
+**.vcxproj.filters
 **.sln
 
 .vs/
 binaries/
+obj/
+imgui.ini

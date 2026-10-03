@@ -3,6 +3,6 @@
 namespace backend
 {
 
-    void PrintHelloWorld();
+    void test();
 
 }

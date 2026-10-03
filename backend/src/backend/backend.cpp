@@ -19,7 +19,7 @@ namespace backend
 
         if (res)
         {
-            spdlog::info(res.value().body);
+            spdlog::info(res.value().version);
         }
         else
         {
