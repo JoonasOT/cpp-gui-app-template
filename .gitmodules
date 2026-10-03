@@ -4,3 +4,7 @@
 [submodule "external_dependencies/cpp-httplib"]
 	path = external_dependencies/cpp-httplib
 	url = git@github.com:yhirose/cpp-httplib.git
+[submodule "external_dependencies/imgui"]
+	path = external_dependencies/imgui
+	url = git@github.com:ocornut/imgui.git
+	branch = docking
