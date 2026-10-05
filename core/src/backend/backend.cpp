@@ -9,17 +9,20 @@
 
 #include <iostream>
 
+#include "shared/swappable.hpp"
+
 namespace backend
 {
 
     void test()
     {
+        spdlog::info("backend val, {}", swappable::VAL);
         httplib::Client client("https://github.com/");
         const auto res = client.Get("/yhirose/cpp-httplib");
 
         if (res)
         {
-            spdlog::info(res.value().version);
+            spdlog::info(res.value().body.substr(0, 10'000));
         }
         else
         {

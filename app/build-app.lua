@@ -9,7 +9,7 @@ staticruntime "off"
 
 files {"src/**.hpp", "src/**.cpp"}
 
-includedirs {"src", "../backend/src"}
+includedirs {"src", "../core/src"}
 
 -- include spdlog
 includedirs {"../external_dependencies/spdlog/include"}

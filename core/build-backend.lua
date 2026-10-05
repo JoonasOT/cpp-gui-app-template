@@ -17,7 +17,7 @@ cppdialect "C++20"
 targetdir "binaries/%{cfg.buildcfg}"
 staticruntime "off"
 
-files {"src/**.hpp", "src/**.cpp"}
+files {"src/backend/**.hpp", "src/backend/**.cpp"}
 
 includedirs {"src"}
 
@@ -53,3 +53,4 @@ defines {"DIST"}
 runtime "Release"
 optimize "Speed"
 symbols "Off"
+
