@@ -8,3 +8,6 @@
 	path = external_dependencies/imgui
 	url = git@github.com:ocornut/imgui.git
 	branch = docking
+[submodule "external_dependencies/json"]
+	path = external_dependencies/json
+	url = git@github.com:nlohmann/json.git

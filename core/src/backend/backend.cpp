@@ -1,5 +1,6 @@
 #include "backend.hpp"
 
+#include "nlohmann/json.hpp"
 #include "spdlog/spdlog.h"
 
 #define CPPHTTPLIB_OPENSSL_SUPPORT
@@ -17,12 +18,12 @@ namespace backend
     void test()
     {
         spdlog::info("backend val, {}", swappable::VAL);
-        httplib::Client client("https://github.com/");
-        const auto res = client.Get("/yhirose/cpp-httplib");
+        httplib::Client client("https://jsonplaceholder.typicode.com");
+        const auto res = client.Get("/posts/1");
 
         if (res)
         {
-            spdlog::info(res.value().body.substr(0, 10'000));
+            spdlog::info(nlohmann::json(res.value().body).dump(4));
         }
         else
         {

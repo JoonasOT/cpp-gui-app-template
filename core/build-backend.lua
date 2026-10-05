@@ -23,6 +23,8 @@ includedirs {"src"}
 
 -- include spdlog
 includedirs {"../external_dependencies/spdlog/include"}
+-- include nlohmann/json
+includedirs {"../external_dependencies/json/single_include"}
 
 -- start cpp-httplib stuff
 includedirs {(opensslLocation .. "include"), "../external_dependencies/cpp-httplib", "src"}
